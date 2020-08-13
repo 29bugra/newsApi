@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="25dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:background="@drawable/baslik" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        tools:context=".ui.search.SearchFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="50dp"
+                    android:id="@+id/searc"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/corneredittex"
+                    android:drawableLeft="@drawable/search_coy"
+                    android:drawablePadding="-200dp"
+                    android:hint="Ara" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/corneredittex"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="TR/TR"
+                    android:textColor="#3a84db"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="İçerikte Ara"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/contentSearchEdittext"
+                android:layout_marginTop="17sp"
+                android:background="@drawable/corneredittex"
+                android:drawableRight="@drawable/search_coy"
+                android:drawablePadding="5dp"
+                android:hint="  Ara" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/line"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Başlıklarda Ara"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/hoodSearchEdittext"
+                android:layout_marginTop="17sp"
+                android:background="@drawable/corneredittex"
+                android:drawableRight="@drawable/search_coy"
+                android:drawablePadding="5dp"
+                android:hint="  Ara" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/line"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Tarih Aralığı"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17sp">
+
+                <Button
+                    android:id="@+id/dateOne"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layout_weight=".50"
+                    android:background="@drawable/cornerbutton"
+                    android:drawableRight="@drawable/calendar_2"
+                    android:text="..."
+
+                    android:textColor="#b4b3b3" />
+
+                <Button
+                    android:id="@+id/dateTwo"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight=".50"
+                    android:background="@drawable/cornerbutton"
+                    android:drawableRight="@drawable/calendar_2"
+
+                    android:text="..."
+
+                    android:textColor="#b4b3b3" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/line"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="3dp"
+                android:text="Dil"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+android:layout_marginTop="17sp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5">
+
+
+                        <ImageView
+
+                            android:id="@+id/turkish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/turkey_copy" />
+
+
+                        <CheckBox
+                            android:id="@+id/languegeTurkeySelect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_toRightOf="@+id/languegeTurkeySelect"
+                            android:gravity="center"
+                            android:buttonTint="#3a84db"
+                            android:text="" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        >
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+
+                            android:layout_centerHorizontal="true"
+
+                            android:background="@drawable/germany_copy"
+                            android:scaleType="center" />
+
+
+                        <CheckBox
+                            android:id="@+id/languegeGermanySelect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-15dp"
+                            android:buttonTint="#3a84db"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true"
+                            android:text="" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        >
+
+
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+
+
+
+                            android:background="@drawable/flag_copy"
+                            android:scaleType="center" />
+
+
+                        <CheckBox
+                            android:id="@+id/languegeABDSelect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-15dp"
+                            android:buttonTint="#3a84db"
+
+                            android:gravity="center"
+                            android:text="" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight=".7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="8dp"
+
+
+
+                            android:background="@drawable/spain_copy"
+                            android:scaleType="center" />
+
+
+                        <CheckBox
+                            android:id="@+id/languegeSpainSelect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-15dp"
+                            android:buttonTint="#3a84db"
+                            android:gravity="center"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="27dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5">
+
+
+                        <ImageView
+
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/uk_copy" />
+
+
+                        <CheckBox
+                            android:id="@+id/languegeEnglandSelect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-15dp"
+                            android:buttonTint="#3a84db"
+                            android:gravity="center"
+                            android:text="" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3.7"
+                        >
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+
+                            android:layout_centerHorizontal="true"
+
+                            android:background="@drawable/france_copy"
+                            android:scaleType="center" />
+
+
+                        <CheckBox
+                            android:id="@+id/languegeFranceSelect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-15dp"
+                            android:layout_toRightOf="@+id/alman"
+                            android:buttonTint="#3a84db"
+                            android:gravity="center"
+                            android:layout_centerHorizontal="true"
+                            android:text="" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/line"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="3dp"
+                    android:text="İçerik(Ülke)"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+android:layout_marginTop="17sp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5">
+
+
+                            <ImageView
+
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/turkey_copy" />
+
+
+                            <CheckBox
+                                android:id="@+id/countryTurkeySelect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-15dp"
+                                android:buttonTint="#3a84db"
+                                android:gravity="center"
+                                android:text="" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            >
+
+                            <ImageView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+
+                                android:layout_centerHorizontal="true"
+
+                                android:background="@drawable/germany_copy"
+                                android:scaleType="center" />
+
+
+                            <CheckBox
+                                android:id="@+id/countryGermanySelect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="#3a84db"
+                                android:layout_marginLeft="-15dp"
+                                android:layout_toRightOf="@+id/alman"
+                                android:gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:text="" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"
+                            >
+
+
+
+                            <ImageView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+
+
+
+                                android:background="@drawable/flag_copy"
+                                android:scaleType="center" />
+
+
+                            <CheckBox
+                                android:id="@+id/countryABDSelect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-15dp"
+                                android:buttonTint="#3a84db"
+
+                                android:gravity="center"
+                                android:text="" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_weight=".7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginTop="8dp"
+
+
+
+                                android:background="@drawable/spain_copy"
+                                android:scaleType="center" />
+
+
+                            <CheckBox
+                                android:id="@+id/countrySpainSelect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-15dp"
+                                android:buttonTint="#3a84db"
+                                android:layout_toRightOf="@+id/icon"
+                                android:gravity="center"
+                                android:text="" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="27dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5">
+
+
+                            <ImageView
+
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/uk_copy" />
+
+
+                            <CheckBox
+                                android:id="@+id/countryEnglandSelect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="#3a84db"
+                                android:layout_marginLeft="-15dp"
+                                android:layout_toRightOf="@+id/turkey"
+                                android:gravity="center"
+                                android:text="" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.7"
+                            >
+
+                            <ImageView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+
+                                android:layout_centerHorizontal="true"
+
+                                android:background="@drawable/france_copy"
+                                android:scaleType="center" />
+
+
+                            <CheckBox
+                                android:id="@+id/countryFrenceSelect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-15dp"
+                                android:buttonTint="#3a84db"
+                                android:layout_toRightOf="@+id/alman"
+                                android:gravity="center"
+                                android:layout_centerHorizontal="true"
+                                android:text="" />
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/line"
+                        android:textSize="16sp"
+                        android:textStyle="normal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17sp"
+                        android:text="Sırala"
+
+                        android:layout_marginLeft="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/releaseDate"
+
+                        android:prompt="@string/spinner"
+                        > </Spinner>
+                    <Spinner
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/popularityAndSimilarityy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></Spinner>
+
+                    <Button
+                        android:text="Sonuçları Getir"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/cornerbuttontwo"
+                        android:textColor="#ffffff"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/resultButton"
+                        android:layout_height="40dp"
+                        />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+</layout>

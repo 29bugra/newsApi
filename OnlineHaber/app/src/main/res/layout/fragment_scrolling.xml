@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ScrollingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+       <ImageView
+           android:layout_width="143dp"
+           android:layout_height="26dp"
+           android:background="@drawable/yenihaberler"
+           android:layout_gravity="center"
+           android:layout_marginTop="41dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:text="Ara"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50" />
+
+            <Button
+                android:text="Filtrele"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerView"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+</layout>
